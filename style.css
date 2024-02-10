@@ -1,15 +1,32 @@
-.lime{ 
-    
-/* background-color: lime; */
-line-height: 10px;
-animation-name: test;
-animation-duration: 2s;
+body{
+background-color: rgb(221, 221, 221);
+
 }
 
-@keyframes test{
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:25px; top:0px;}
-    50%  {background-color:blue; left:50px; top:200px;}
-    75%  {background-color:green; left:75px; top:200px;}
-    100% {background-color:red; left:100px; top:0px;}
+.lime{ 
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    /* background-image: url(m.jpeg); */
+    background-size: cover;
+    background-position: center;
+width: 300px;
+height: 400px;
+border-radius: 5%;
+box-shadow: 2px 2px  2px;
+/* line-height: 10px; */
+animation-name: test;
+animation-duration: 0.5s;
+/* animation-direction: normal; */
+animation-direction: alternate;
 }
+
+
+@keyframes test{
+    0%   {width: 0; height: 0;}
+    /* 25%  {width: 100px; height: 200px;}
+    50%  {width: 200px; height: 300px;} */
+    100% {width: 300px; height: 400px;}
+}
+
